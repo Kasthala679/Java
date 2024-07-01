@@ -1,0 +1,36 @@
+package apjsfa;
+import java.util.Scanner;
+//class declaration
+public class ReverseString {
+
+	public static void main(String[] args) {
+		
+		//creating Scanner for user input
+		Scanner scanner=new Scanner(System.in);
+		
+		//Entering string by user
+		System.out.println("Enter a string");
+		
+		//read user input
+        String original=scanner.nextLine();
+
+        //create char array to hold reversed string
+        char[] reversedArray=new char[original.length()];
+       
+        //fill reversedArray with characters from original in reversed order
+        for(int i=0;i<original.length();i++) {
+        	reversedArray[i]=original.charAt(original.length()-1-i);
+        }
+        
+        //convert reversed char array to string
+        String reversedString=new String(reversedArray);
+ 
+        //printing original string
+        System.out.println("Original:"+original);
+        
+        //printing reversed string
+        System.out.println("Reversed:"+reversedString);
+       
+	}
+
+}
