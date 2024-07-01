@@ -1,0 +1,35 @@
+package com.collections;
+
+import java.util.PriorityQueue;
+
+public class Priority_Queue {
+    public static void main(String[] args) {
+        // Create PriorityQueue 
+        PriorityQueue<Integer> pr = new PriorityQueue<Integer>();
+        
+        // Add elements to the PriorityQueue
+        pr.add(4); 
+        pr.add(8); 
+        pr.add(6); 
+        pr.add(3); 
+
+        // Print the entire PriorityQueue
+        System.out.println("Priority Queue");
+        System.out.println(pr); 
+        
+        // Peek at the top element 
+        System.out.println("Top element is " + pr.peek()); 
+        
+        // Poll the top element 
+        System.out.println("Poll is " + pr.poll()); 
+        
+        // Print the PriorityQueue after polling
+        System.out.println(pr); 
+        
+        // Remove the top element 
+        System.out.println("Removed " + pr.remove()); 
+        
+        // Print the PriorityQueue after removal
+        System.out.println(pr); 
+    }
+}
