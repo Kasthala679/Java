@@ -1,0 +1,55 @@
+package apjsfa;
+	import java.util.Scanner;
+
+	public class MarksSheet {
+
+		public static void main(String[] args) {
+			//initialize variables
+			int i,sub=0;
+			float sum=0,per;
+			// scanner to take marks as input 
+			Scanner sc=new Scanner(System.in);
+			int arr[]=new int[6];
+			System.out.println("Enter 6 subject marks");
+			for(i=0;i<=5;i++) {
+				arr[i]=sc.nextInt();
+			}
+			System.out.println("\tMARKS SHEET");
+			//displaying the marks
+			for(i=0;i<=5;i++) {
+				//if any subject has less than 35 display as failed
+				if(arr[i]<35) {
+					System.out.println("Failed in the subject "+(i+1));
+					sub+=1;
+				}
+				//display the marks of the subjects
+				else {
+					System.out.println("Subject "+(i+1)+" marks are "+arr[i]);
+					sum=sum+arr[i];
+				}
+				
+			}
+			//if any subject is failed 
+			System.out.println("\tRESULT");
+			if(sub!=0) {
+				System.out.println("\tFailed...");
+			}
+			//display the marks total and percentage
+			else {
+				System.out.println("Total marks are " +sum );
+				System.out.println("Average marks are "+(sum/6));
+				per=(sum/600)*100;
+				System.out.println("Percentage is "+ per+"%");
+				
+			}
+			
+			
+
+		}
+		
+
+	
+
+	}
+
+
