@@ -1,0 +1,22 @@
+package apjsfa;
+import java.util.Stack;
+public class StackCity {
+
+	public static void main(String[] args) {
+		//creating a stack
+		Stack<String> sc= new Stack<String>();
+		//assigning the strings to stack
+		sc.add("Hyderabad");//83.26
+		sc.add("Delhi");//86.21
+		sc.add("Bangloore");//87.67
+		sc.add("Mumbai");//89.73
+		sc.add("Chennai");//90.23
+		
+		//finding the top city using peek 
+		System.out.println("Top literacy city is "+sc.peek());
+		//finding the index value using the search
+		System.out.println("Hyderabad is at index "+sc.search("Hyderabad"));
+
+	}
+
+}
